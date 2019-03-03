@@ -1,0 +1,458 @@
+
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img{
+  height:30%;
+  width: 30%;
+}
+
+nav{
+  margin-bottom: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: avenir, 'Nunito', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  padding: 10px 10px 10px 10px;
+  line-height: 300%;
+}
+
+nav ul{
+  display: block;
+  align-items: center;
+}
+
+nav li{
+  display: block;
+  text-align: center;
+}
+
+nav a.selected{
+  color: white;
+  background-color: #006D7F;
+}
+
+nav a:hover{
+  color: white;
+  background-color: #006D7F;
+}
+
+#about{
+  background-color: #64abbe;
+  padding: 20% 5%;
+}
+
+.profilephoto{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  height: 50%;
+  width: 50%;
+}
+
+.portfoliosamples{
+  padding: 20% 5%;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+}
+
+.portfoliosamples a{
+  background-color: #006D7F;
+  text-decoration: none;
+  font-family: avenir,'Nunito', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  line-height: 300%;
+}
+
+.portfoliosamples li{
+  display: inline-block;
+  text-align: center;
+}
+
+.portfoliosamples a:hover{
+  color: #006D7F;
+  background-color: white;
+}
+
+#contact{
+  background-image: url("../images/citybackground.jpg");
+  padding: 20% 0%;
+  background-color: turquoise;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.contacttext{
+  display: block;
+  background-color: #64abbe;
+  padding: 50px;
+  padding-bottom: 275px;
+}
+
+.gallery img{
+	height: 90%;
+	width: 100%;
+}
+
+.gallery{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: stretch;
+  justify-content: space-between;
+}
+
+h3, h4 {
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.3;
+  padding-left: 20px;
+}
+
+li{
+  font-family: avenir, 'Nunito', sans-serif;
+  padding-left: 20px;
+}
+
+p{
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.3;
+  padding-bottom: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1{
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 2em;
+  color: white;
+  line-height: 1.6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2{
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 25px
+}
+
+.indexintro{
+  background-color: turquoise;
+  background-image: url("../images/citybackground2.jpg");
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.indexh1{
+  align-self: center;
+  text-align: center;
+}
+
+.experienceintro{
+  background-color: turquoise;
+  background-image: url("../images/citybackground3.jpg");
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.experienceintro h1{
+  align-self: center;
+  text-align: center;
+}
+
+.uxintro{
+  background-color: #64abbe;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.uxintro h1{
+  align-self: center;
+  text-align: center;
+}
+
+
+.button{
+  background-color: transparent;
+  border: 1pt solid black;
+  color: black;
+  padding: 15px 32px;
+  content: center;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20%;
+}
+
+.button a.selected{
+  color: black;
+}
+
+.button a{
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+.button2{
+  background-color: transparent;
+  border: 1pt solid black;
+  color: black;
+  padding: 15px 50px;
+  content: center;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button2 a.selected{
+  color: black;
+}
+
+.button2 a{
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+} */
+
+a.skiptomain{
+	padding:10px;
+	text-decoration: none;
+	position: relative;
+    top: -80px;
+    transition: top ease-in .2s;
+  font-family: avenir, 'Nunito', sans-serif;
+  color: black;
+}
+
+a.skiptomain:focus{
+	background: white;
+	top: 10px;
+	border: 1px solid black;
+}
+
+footer{
+  background-color: white;
+  padding: 10% 5%;
+  font-family: avenir, 'Nunito', sans-serif;
+}
+
+a i{
+ display: inline-block;
+ padding-left: 10%;
+ color: black;
+}
+
+.uxportimpact {
+  position: relative;
+  width: 50%;
+  display: flex;
+  display: inline-block;
+}
+
+.uximage {
+  display: block;
+  width: 100vh;
+  height: auto;
+}
+
+.uxoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #006D7F;
+  overflow: hidden;
+  width: 100vh;
+  height: 0;
+  transition: .5s ease;
+  font-family: avenir, 'Nunito', sans-serif;
+}
+
+.uxportimpact:hover .uxoverlay {
+  height: 50%;
+}
+
+.uxtext {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.entrytitle{
+  color: #006D7F;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+  width: 15vw;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.logo img{
+  display: block;
+  width: 15vw;
+}
+
+/*  Media screens start! tablet --------------------------------*/
+
+@media screen and (min-width:700px){
+	body{background: white;
+	}
+	.gallery{
+		display: flex;s
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+	  justify-content: space-around;
+	}
+	.gallery img{
+		height: 50%;
+		width: 50%;
+	}
+
+  nav{
+    display: block;
+    text-align: center;
+  }
+
+  nav li{
+    display: inline;
+  }
+
+  .indexintro{
+    height: 75vh;
+  }
+
+  #about{
+    padding: 10% 10%;
+  }
+
+  .profilephoto{
+    height: 30%;
+    width: 30%;
+  }
+
+  .experiencecontent{
+    margin: 50px;
+  }
+
+  .experiencecontent ul{
+    padding-left: 75px;
+  }
+
+  /* .uximage {
+    display: block;
+    width: 100vh;
+    height: auto;
+  }
+
+  .uxoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #006D7F;
+    overflow: hidden;
+    width: 100vh;
+    height: 0;
+    transition: .5s ease;
+    font-family: avenir, 'Nunito', sans-serif;
+  } */
+
+}
+
+/* Media screen for desktop _________________________________*/
+
+@media screen and (min-width:1200px){
+	body{background: white;
+	}
+	.gallery{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+	  justify-content: space-around;
+	}
+	.gallery img{
+		height: 100%;
+		width: 33%;
+	}
+
+  #about{
+    padding: 5% 20%;
+  }
+
+  .profilephoto{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 30%;
+    width: 30%;
+  }
+
+  .experiencecontent{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .experiencecontent ul{
+    padding-left: 75px;
+  }
+
+
+}
