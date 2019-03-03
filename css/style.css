@@ -1,12 +1,4 @@
 
-
-.gallery{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 img{
   height:30%;
   width: 30%;
@@ -93,7 +85,7 @@ nav a:hover{
   padding: 20% 0%;
   background-color: turquoise;
   display: flex;
-  height: 50vh;
+  height: auto;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -103,21 +95,30 @@ nav a:hover{
 .contacttext{
   display: block;
   background-color: #64abbe;
-  padding: 50px;
-  padding-bottom: 275px;
+  padding: 70px 100px 100px 100px;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 .gallery img{
-	height: 90%;
-	width: 100%;
+  width: 100%;
+  height:auto;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.gallerycontainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .gallery{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: stretch;
-  justify-content: space-between;
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
 }
 
 h3, h4 {
@@ -206,58 +207,26 @@ h2{
 
 
 .button{
-  background-color: transparent;
-  border: 1pt solid black;
-  color: black;
+  line-height: 300%;
+  background-color: #006D7F;
   padding: 15px 32px;
-  content: center;
-  text-decoration: none;
+  margin-left: 40%;
+  margin-top: 10%;
   display: inline-block;
   text-decoration: none;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 20%;
-}
-
-.button a.selected{
-  color: black;
-}
-
-.button a{
+  color: white;
   font-family: avenir, 'Nunito', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-  display: flex;
-  justify-content: center;
+  font-size: 1em;
 }
 
-/*
-.button2{
-  background-color: transparent;
-  border: 1pt solid black;
-  color: black;
-  padding: 15px 50px;
-  content: center;
-  text-decoration: none;
-  display: block;
-  text-decoration: none;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+.button:hover{
+  color: #006D7F;
+  background-color: white;
 }
 
-.button2 a.selected{
-  color: black;
+.button:hover a{
+  color: #006D7F;
 }
-
-.button2 a{
-  font-family: avenir, 'Nunito', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-} */
 
 a.skiptomain{
 	padding:10px;
@@ -296,7 +265,7 @@ a i{
 
 .uximage {
   display: block;
-  width: 100vh;
+  width: 100vw;
   height: auto;
 }
 
@@ -306,21 +275,22 @@ a i{
   left: 0;
   right: 0;
   background-color: #006D7F;
+  opacity: 0.9;
   overflow: hidden;
-  width: 100vh;
+  width: 100vw;
   height: 0;
   transition: .5s ease;
-  font-family: avenir, 'Nunito', sans-serif;
 }
 
 .uxportimpact:hover .uxoverlay {
-  height: 50%;
+  height: 100%;
 }
 
 .uxtext {
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 2em;
   white-space: nowrap;
   color: white;
-  font-size: 20px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -354,15 +324,8 @@ a i{
 	body{background: white;
 	}
 	.gallery{
-		display: flex;s
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: stretch;
-	  justify-content: space-around;
-	}
-	.gallery img{
-		height: 50%;
-		width: 50%;
+    flex: 33%;
+    max-width: 33%;
 	}
 
   nav{
@@ -395,24 +358,9 @@ a i{
     padding-left: 75px;
   }
 
-  /* .uximage {
-    display: block;
-    width: 100vh;
-    height: auto;
+  .uxtext{
+    font-size: 3em;
   }
-
-  .uxoverlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #006D7F;
-    overflow: hidden;
-    width: 100vh;
-    height: 0;
-    transition: .5s ease;
-    font-family: avenir, 'Nunito', sans-serif;
-  } */
 
 }
 
@@ -422,15 +370,8 @@ a i{
 	body{background: white;
 	}
 	.gallery{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: stretch;
-	  justify-content: space-around;
-	}
-	.gallery img{
-		height: 100%;
-		width: 33%;
+    flex: 33%;
+    max-width: 33%;
 	}
 
   #about{
@@ -454,5 +395,8 @@ a i{
     padding-left: 75px;
   }
 
+  .uxtext{
+    font-size: 4em;
+  }
 
 }
